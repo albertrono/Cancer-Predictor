@@ -27,7 +27,7 @@ models = load_models()
 # Streamlit Page Setup
 # -----------------------------
 st.set_page_config(page_title="Breast Cancer Prediction Suite", layout="wide")
-st.title("🎗️ Breast Cancer Multi-Model Prediction Suite")
+st.title("Breast Cancer Multi-Model Prediction Suite")
 
 st.write(
     "This app predicts **molecular subtype**, **survival status**, and **vital status** "
@@ -45,13 +45,13 @@ model_choice = st.sidebar.selectbox(
 )
 
 selected_model_info = models[model_choice]
-st.markdown(f"### 🔬 Using **{model_choice}**")
+st.markdown(f"###  Using **{model_choice}**")
 st.info("Provide patient and tumor information below to get predictions. All models use the same input features.")
 
 # -----------------------------
 # Input Features
 # -----------------------------
-st.subheader("🧍 Patient & Tumor Information")
+st.subheader("Patient & Tumor Information")
 
 col1, col2 = st.columns(2)
 
