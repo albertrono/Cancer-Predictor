@@ -1,5 +1,2 @@
 venv/
 try.ipynb
-molecular_subtype_model.joblib
-vital_status_model.joblib
-survival_status_model.joblib
